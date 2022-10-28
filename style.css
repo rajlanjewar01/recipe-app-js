@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #f5f5f5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+.header{
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.header h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.search-input{
+    width: 25%;
+    border: 1px solid rgba(1,1,1,.4);
+    padding: 10px 30px;
+    border-radius: 6px;
+    outline: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+.search-btn{
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #f0cc3b;
+    border-radius: 2px;
+    border: none;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    padding: 0 40px;
+}
+
+.container .card{
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.container .card .face{
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.container .card .face.face1 .content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container .card .face.face1 .content img{
+    width: 100%;
+    background-position: center;
+    background-size: center;
+    background-repeat: no-repeat;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    color: #3363ff;
+    padding: 5px;
+    background-color: #E6ECFF;
+    text-align: center;
+}
